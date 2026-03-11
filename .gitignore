@@ -1,0 +1,38 @@
+# Compiled Java files
+*.class
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE folders
+.idea/
+.vscode/
+*.iml
+
+# Build folders
+bin/
+out/
+target/
+
+# Maven / Gradle
+.gradle/
+build/
+
+# Environment files
+.env
+
+# Mac system files
+.AppleDouble
+.LSOverride
+
+# Windows system files
+ehthumbs.db
+Desktop.ini
