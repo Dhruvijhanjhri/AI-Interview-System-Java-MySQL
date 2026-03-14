@@ -8,8 +8,6 @@ The application stores questions and user results in a **MySQL database** and re
 
 This project demonstrates the use of **Java programming, JDBC database connectivity, DAO architecture, and Java Swing GUI**.
 
----
-
 ## Features
 
 * User **Registration and Login**
@@ -26,8 +24,6 @@ This project demonstrates the use of **Java programming, JDBC database connectiv
 * Console-based question answering system
 * Structured **layered architecture**
 
----
-
 ## Technologies Used
 
 * Java
@@ -35,8 +31,6 @@ This project demonstrates the use of **Java programming, JDBC database connectiv
 * JDBC (Java Database Connectivity)
 * Java Swing (GUI)
 * Git & GitHub
-
----
 
 ## Project Architecture
 
@@ -72,8 +66,6 @@ Database (MySQL)
 
 * Manages database connection
 
----
-
 ## Project Structure
 
 ```
@@ -103,8 +95,6 @@ src
     └── Main.java
 ```
 
----
-
 ## Database Design
 
 ### 1. Users Table
@@ -117,8 +107,6 @@ CREATE TABLE users (
     password VARCHAR(100)
 );
 ```
-
----
 
 ### 2. Questions Table
 
@@ -135,8 +123,6 @@ CREATE TABLE questions (
 );
 ```
 
----
-
 ### 3. Results Table
 
 ```sql
@@ -150,8 +136,6 @@ CREATE TABLE results (
 );
 ```
 
----
-
 ## How the System Works
 
 1. User opens the application.
@@ -164,8 +148,6 @@ CREATE TABLE results (
 8. Scores are calculated automatically.
 9. Final results are stored in the MySQL database.
 
----
-
 ## How to Run the Project
 
 ### Step 1: Clone the Repository
@@ -173,8 +155,6 @@ CREATE TABLE results (
 ```
 git clone https://github.com/Dhruvijhanjhri/AI-Interview-System-Java-MySQL.git
 ```
-
----
 
 ### Step 2: Setup MySQL Database
 
@@ -204,23 +184,17 @@ String user = "root";
 String password = "your_password";
 ```
 
----
-
 ### Step 4: Compile the Project
 
 ```
 javac -cp "lib/mysql-connector-j-9.6.0.jar;src" src/config/*.java src/model/*.java src/dao/*.java src/ui/*.java src/main/*.java
 ```
 
----
-
 ### Step 5: Run the Application
 
 ```
 java -cp "lib/mysql-connector-j-9.6.0.jar;src" main.Main
 ```
-
----
 
 ## Application Flow
 
@@ -239,8 +213,6 @@ Score Calculated
 ↓
 Result Stored in Database
 ```
-
----
 
 ## Future Improvements
 
