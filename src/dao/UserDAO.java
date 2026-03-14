@@ -1,8 +1,8 @@
 package dao;
+
 import model.User;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
 import config.DBConnection;
+import java.sql.*;
 
 public class UserDAO {
 
@@ -27,6 +27,32 @@ public class UserDAO {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
 
+    // LOGIN METHOD FOR GUI
+    public static boolean loginUser(String email, String password) {
+
+        try {
+
+            Connection conn = DBConnection.getConnection();
+
+            String query = "SELECT * FROM users WHERE email=? AND password=?";
+
+            PreparedStatement ps = conn.prepareStatement(query);
+
+            ps.setString(1, email);
+            ps.setString(2, password);
+
+            ResultSet rs = ps.executeQuery();
+
+            if(rs.next()) {
+                return true;
+            }
+
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+
+        return false;
     }
 }

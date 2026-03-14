@@ -1,12 +1,11 @@
 package main;
 
-import ui.LoginUI;
+import ui.LoginGUI;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        new LoginUI();
-
+        new LoginGUI();
     }
 }
